@@ -21,7 +21,20 @@ Doesnt have Staict ip
 Cannot be use as a servers as their ip arew changed.
 
 Step To install DHCP Server in Ubuntu 16.04:-
-
-Step 1:-Open Command Prompt
-Step 2:- Check for the DHCP Server in your system if server their then check for update if not write following command
-sudo apt-get install isc-dhcp-server this will install the sertver.
+(1)STEP 1:  
+   kali@tanmay:~$sudo apt install -y isc-dhcp-server
+   this command helps to update,install the server
+(2)STEP 2 : 
+   kali@tanmay:~$sudo nano/etc/dhcp/dhcpd.conf
+   It's used to store the network configuration information required by DHCP clients.
+(3)STEP 3: 
+   $kali@tanmay:~$ip addr
+   to get the DHCP I paddress
+(4)We then configure the subnet and the netmask(dhcpd.conf),then just save the file and exit
+(5)STEP 4:
+   kali@tanmay:~$sudo systemctl enable isc-dhcp-server.service
+   it basically enables the server.
+(6)STEP 5 : 
+   kali@tanmay:~$sudo systemctl start isc-dhcp-server.service
+   start the server.
+DONE.
