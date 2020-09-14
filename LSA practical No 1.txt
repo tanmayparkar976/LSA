@@ -1,0 +1,27 @@
+Practical No 1
+Install DHCP Server in Ubuntu 16.04
+
+WHat is DHCP server??
+
+DHCP stands for Dynamic Host Configuration Protocol.
+In this client & server both protocol are provided with automatical Internet Protocol host with its ip address/
+It also provide other related configuration information like subnet mask & default gateway.
+Ip address provide / assingn by DHCP server to DHCP client is on lease
+Lease time is normally varies on how long a client company computer is.
+Its mainly done to require connection or DHCP configuration.
+
+ADVANTAGES OF DHCP:-
+Reliable IP configuration betwwen client and server.
+It minimize configuration errors caused by manual ip address configuration.
+Reduces network administration.
+
+DISADVANTAGES OF DHCP:-
+Tracing of internet activity may be difficult when same machine may be used tow time for more then different ip adress over a period
+Doesnt have Staict ip
+Cannot be use as a servers as their ip arew changed.
+
+Step To install DHCP Server in Ubuntu 16.04:-
+
+Step 1:-Open Command Prompt
+Step 2:- Check for the DHCP Server in your system if server their then check for update if not write following command
+sudo apt-get install isc-dhcp-server this will install the sertver.
