@@ -30,7 +30,7 @@ Step To install DHCP Server in Ubuntu 16.04:-
 (3)STEP 3: 
    $kali@tanmay:~$ip addr
    to get the DHCP I paddress
-(4)We then configure the subnet and the netmask(dhcpd.conf),then just save the file and exit
+(4)We then configure the subnet and the netmask(dhcpd.conf),and save the file and exit
 (5)STEP 4:
    kali@tanmay:~$sudo systemctl enable isc-dhcp-server.service
    it basically enables the server.
