@@ -1,0 +1,45 @@
+Practical No :- 2
+
+Adding a user:
+User is a person/computer who uses the network,computer services
+Its take or work on the machine permission which are read,write,execute by the command
+In one system a user can me added in group or individually 
+Command:-
+ $sudo adduser <username>
+ Example:-$sudo adduser Tanmay
+ 
+Network settings:
+In this setting or conncetion it usually shows the network conncetion to the devices in the form of 
+IP address,Lan,Wan etc.
+Command:$sudo ip addr
+
+Configuring services:
+This services mainly run in background
+It is also know as demon for example smbd,nmbd
+Comand :$sudo nano /etc/dhcp/dhcpd.conf
+
+List of services running:
+use to find current activites running in background
+command:$sudo systemctl
+
+Service Name:isc-dhcp-server.service 
+
+Command to enable a service:
+$sudo systemctl enable <service_name>
+ Eg: $sudo systemctl enable isc-dhcp-server.service 
+ 
+Command to start a service:                  
+$sudo systemctl start <service_name>
+   Eg: $sudo systemctl start isc-dhcp-server.service	
+
+ Command to check the status of a service:    
+ $sudo systemctl status <service_name>
+    Eg: $sudo systemctl status isc-dhcp-server.service
+ 
+ Command to stop a service:                   
+ $sudo systemctl stop <service_name> 
+   Eg: $sudo systemctl stop isc-dhcp-server.service 
+  
+Command to auto-start a service:
+$sudo systemctl restart <service_name>
+   Eg: $sudo systemctl restart isc-dhcp-server.service
