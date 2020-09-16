@@ -1,0 +1,25 @@
+                                                  Practical No 3
+Aim:Configure NTP Server (NTPd), Install and Configure NTPd, Configure NTP Client (Ubuntu and Windows)
+
+What is NTP server?
+
+NTP stands for Network Time Protocol.
+In this server it uses internet services to show accurate time.
+It shows the accurate time to your system.
+it syncronize the clock with the time refernce
+it was developed by Prof David L. Mills at university of Delawre
+It both theserver client mode , sever mode both
+ NTP is to reveal the offset of the client's local clock relative to a time server's local clock
+ 
+ Advantages of Ntp Server
+ showes accurate time
+ gives security,control,accuracy,availability 
+ it is located behind the firewall
+ 
+ Disadvantages of Ntp Server
+ It gets crash and shutdown for a period of time just like other web servers
+ thier are some glitches than unexcepted downtime may vary in duration.
+ 
+==Install and Configure NTPd==
+sudo apt install ntp
+
