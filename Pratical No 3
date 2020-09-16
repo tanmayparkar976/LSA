@@ -22,4 +22,11 @@ It both theserver client mode , sever mode both
  
 ==Install and Configure NTPd==
 sudo apt install ntp
+it is mainly used to install ntp server to your system.
 
+etc/ntp.conf it is the configuration file you have to do configuration over here:
+sudo vim /etc/ntp.conf
+server 0.europe.pool.ntp.org
+server 1.europe.pool.ntp.org
+server 2.europe.pool.ntp.org
+server 3.europe.pool.ntp.org
